@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
+    background-color: rgb(204, 255, 238);
 
         &_logo{
             display:flex;
@@ -17,7 +19,6 @@
         display:flex;
         width: 100%;
         height: auto;
-        border: 5px solid pink;
         justify-content: space-evenly;
     }
         
@@ -59,4 +60,376 @@
         align-items: center;
         justify-content: center;
     }
+
+.container-muñeco{
+
+    p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+    }
+
 }
+
+
+.container-btn{
+    display:flex;
+    flex-direction: row;
+    width: auto;
+    margin: 10px 40px 10px 40px;
+
+    .btn-encriptar{
+        width: 140px;
+        height: 40px;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        }
+        .btn-encriptar:hover{
+            background-color: rgba(212, 166, 97, 0.623);
+        }
+        
+    }   
+}
+@media (max-width: 1580px) {
+
+
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(204, 255, 238);
+    
+            &_logo{
+                display:flex;
+                width: 70vh;
+                height: auto;
+                margin: 2rem;
+                margin-bottom: 5rem;
+            }
+    
+        .card{
+            display:flex;
+            flex-flow: row wrap;
+            width: 100%;
+            height: auto;
+            justify-content: space-evenly;
+        }
+            
+        .left{
+            display: flex;
+            flex-direction: column;
+            width:auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+            padding: 2px;
+    
+            &_textInput{
+            width: 40vh;
+            height: 20vh;
+            border:3px solid black;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            }
+        }
+        .container-muñeco{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+
+            &_img{
+                display:flex;
+                width: 15rem;
+                
+            }
+            
+        }
+    
+        .cardBotones{
+            display:flex;
+            flex-direction: row;
+            width: auto;
+            height: 200px;
+        }
+    
+        .rightContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h1{
+                font-size: 25px;
+                margin-bottom: 2px;
+            }
+
+            textarea{
+                width: 450px;
+                height: 150px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            button{
+                margin-top: 10px;
+                border: 2px solid black;
+                
+            }
+        }
+    
+        p{
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 1.2px;
+        }
+    
+    }
+        
+    .container-btn{
+        display:flex;
+        flex-direction: row;
+        width: auto;
+            margin: 5px 0px 5px 0px;
+    
+        .btn-encriptar{
+            width: 140px;
+            height: 40px;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            }
+            .btn-encriptar:hover{
+                background-color: rgba(212, 166, 97, 0.623);
+            }
+            
+        }   
+    }
+
+    @media (max-width: 810px) {
+        .container{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+
+            &_logo{
+                display:flex;
+                width: 50vh;
+                height: auto;
+                margin: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        
+            .card{
+                all:unset;
+                display: flex;
+                flex-direction: column; 
+                width: 100%;
+                align-items: center;
+                
+                
+                .left{
+                    display: flex;
+                    align-items: center;
+                    width: 50vh;
+                    height: 18vh;
+
+                    .left_textInput{
+                        width: 50vh;
+                        height: 18vh;
+
+                    }
+                }
+            }
+
+            .container-muñeco{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+
+    @media (max-width: 510px) {
+        .container{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+
+            &_logo{
+                display:flex;
+                width: 30vh;
+                height: auto;
+            }
+        
+            .card{
+                all:unset;
+                display: flex;
+                flex-direction: column; 
+                width: 100%;
+                align-items: center;
+                
+                
+                .left{
+                    display: flex;
+                    align-items: center;
+                    width: 40vh;
+                    height: 18vh;
+
+                    .left_textInput{
+                        width: 40vh;
+                        height: 18vh;
+
+                    }
+                }
+
+                .rightContainer{
+                    width: auto;
+                    margin-left: 1rem;
+                    margin-right: 1rem;
+                    textarea{
+                        height: 150px;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 320px) {
+        .container{
+            display:flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+
+            &_logo{
+                display:flex;
+                width: auto;
+                height: auto;
+            }
+        
+            .card{
+                all:unset;
+                display: flex;
+                flex-direction: column; 
+                width: 100%;
+                align-items: center;
+                
+                
+                .left{
+                    display: flex;
+                    align-items: center;
+                    width: 20vh;
+                    height: 18vh;
+
+                    .left_textInput{
+                        width: 20vh;
+                        height: 18vh;
+
+                    }
+                }
+
+                .container-muñeco{
+                    display:flex;
+                    flex-direction: column;
+                    width: auto;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+        
+                    &_img{
+                        display:flex;
+                        width: 30vh;
+                        
+                    }
+                    
+                }
+
+                .container-btn{
+                    display:flex;
+                    flex-direction: row;
+                    width: auto;
+                    margin: 0px;
+                
+                    .btn-encriptar{
+                        width: 120px;
+                        height: 40px;
+                        border: 2px solid black;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        margin-left: 5px;
+                        margin-right: 5px;
+                        text-align: center;
+                        font-size: .7rem;
+                        font-weight: 800;
+                        }
+                        .btn-encriptar:hover{
+                            background-color: rgba(212, 166, 97, 0.623);
+                        }
+                        
+                    }   
+                
+                    .rightContainer{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+            
+                        h1{
+                            font-size: 18px;
+                            margin-bottom: 2px;
+                        }
+            
+                        textarea{
+                            width: 200px;
+                            height: 150px;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            padding-top: 50px;
+                        }
+            
+                        button{
+                            margin-top: 10px;
+                            border: 2px solid black;
+                            
+                        }
+                    }
+                
+                    p{
+                        text-align: center;
+                        font-size: 1rem;
+                        font-weight: 800;
+                        letter-spacing: 1.2px;
+                    }
+                }
+            }
+        }
+    

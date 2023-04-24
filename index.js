@@ -7,89 +7,37 @@
     u = ufat
 */
 
-function encriptador(){
-    const text = document.getElementById("inputText").ariaValueMax.toLowerCase();
-    textCifrado = text.replace("e","enter");
-    textCifrado = textCifrado.replace("o","ober");
-    textCifrado = textCifrado.replace("i","imes");
-    textCifrado = textCifrado.replace("e","ai");
-    textCifrado = textCifrado.replace("e","ufat");
+function encriptador() {
+  const texto = document.getElementById("inputtexto").value.toLowerCase();
+  const textoEncriptado = texto
+    .replace(/e/ig, "enter")
+    .replace(/o/ig, "ober")
+    .replace(/i/ig, "imes")
+    .replace(/a/ig, "ai")
+    .replace(/u/ig, "ufat");
 
-    document.getElementById("img")
-    document.getElementById("text2").innerHTML = txtCifrado;
+  document.getElementById("texto").style.display = "none";
+  document.getElementById("texto2").innerHTML = textoEncriptado;
+  document.getElementById("copiar").style.display = "inherit";
 }
 
-function desencriptador(){
-    
+function desencriptar() {
+  const textoEncriptado = document.getElementById("inputtexto").value.toLowerCase();
+  const textoDesencriptado = textoEncriptado
+    .replace(/enter/ig, "e")
+    .replace(/ober/ig, "o")
+    .replace(/imes/ig, "i")
+    .replace(/ai/ig, "a")
+    .replace(/ufat/ig, "u");
+
+  document.getElementById("texto").style.display = "none";
+  document.getElementById("texto2").innerHTML = textoDesencriptado;
+  document.getElementById("copiar").style.display = "inherit";
 }
 
-
-const fs = require('fs');
-
-class ProductManager {
-  constructor() {
-    this.idCounter = 0;
-    this.path = "./products.json";
-  }
-
-  async getProducts() {
-    try {
-      if (fs.existsSync(this.path)) {
-        const products = await fs.promises.readFile(this.path, 'utf8');
-        const productsJS = JSON.parse(products);
-        return productsJS;
-      } else {
-        return [];
-      }
-    } catch (error) {
-      throw error;
-    }
-  }
-
-  async createProduct(title, description, price, thumbnail, code, stock) {
-    try {
-      const productsFile = await this.getProducts();
-      const existingCode = productsFile.find(product => product.code === code);
-
-      if (existingCode) {
-        throw new Error(`Ya existe un producto con el código ${code}`);
-      } else {
-        const lastProduct = productsFile[productsFile.length - 1];
-        const newId = lastProduct ? lastProduct.id + 1 : 1;
-        const product = {
-          id: newId,
-          title,
-          description,
-          price,
-          thumbnail,
-          code,
-          stock,
-        };
-
-        productsFile.push(product);
-        await fs.promises.writeFile(this.path, JSON.stringify(productsFile));
-        return product;
-      }
-    } catch (error) {
-      throw error;
-    }
-  }
-
-  async removeProduct(idProduct) {
-    try {
-      const productsFile = await this.getProducts();
-      const updatedProducts = productsFile.filter(product => product.id !== idProduct);
-
-      if (updatedProducts.length === productsFile.length) {
-        throw new Error('No se encontró el producto con el ID especificado');
-      } else {
-        await fs.promises.writeFile(this.path, JSON.stringify(updatedProducts));
-        console.log(`Producto con ID ${idProduct} eliminado exitosamente`);
-        return updatedProducts;
-      }
-    } catch (error) {
-      throw error;
-    }
-  }
-
-  async modifyProduct(idProduct, updatedFields) {
+function copiar(){
+  const contenido = document.querySelector("#texto2");
+  contenido.select();
+  document.execCommand("copy");
+  alert("El texto se ha copiado al portapapeles.");
+}

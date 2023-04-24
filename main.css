@@ -14,6 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 100vh;
+  background-color: #ccffee;
 }
 
 .container_logo {
@@ -32,7 +34,6 @@
   display: flex;
   width: 100%;
   height: auto;
-  border: 5px solid pink;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -103,6 +104,472 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container .container-muñeco p {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.container .container-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin: 10px 40px 10px 40px;
+}
+
+.container .container-btn .btn-encriptar {
+  width: 140px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container .container-btn .btn-encriptar:hover {
+  background-color: rgba(212, 166, 97, 0.623);
+}
+
+@media (max-width: 1580px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ccffee;
+  }
+  .container_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70vh;
+    height: auto;
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+  .container .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+    height: auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2px;
+  }
+  .container .left_textInput {
+    width: 40vh;
+    height: 20vh;
+    border: 3px solid black;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .container .container-muñeco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+  .container .container-muñeco_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 15rem;
+  }
+  .container .cardBotones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    height: 200px;
+  }
+  .container .rightContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .rightContainer h1 {
+    font-size: 25px;
+    margin-bottom: 2px;
+  }
+  .container .rightContainer textarea {
+    width: 450px;
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .container .rightContainer button {
+    margin-top: 10px;
+    border: 2px solid black;
+  }
+  .container p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+  }
+  .container-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    margin: 5px 0px 5px 0px;
+  }
+  .container-btn .btn-encriptar {
+    width: 140px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  .container-btn .btn-encriptar:hover {
+    background-color: rgba(212, 166, 97, 0.623);
+  }
+}
+
+@media (max-width: 810px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .container_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vh;
+    height: auto;
+    margin: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .container .card {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .card .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50vh;
+    height: 18vh;
+  }
+  .container .card .left .left_textInput {
+    width: 50vh;
+    height: 18vh;
+  }
+  .container .container-muñeco {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 510px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .container_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30vh;
+    height: auto;
+  }
+  .container .card {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .card .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40vh;
+    height: 18vh;
+  }
+  .container .card .left .left_textInput {
+    width: 40vh;
+    height: 18vh;
+  }
+  .container .card .rightContainer {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .container .card .rightContainer textarea {
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+  }
+  .container_logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+  .container .card {
+    all: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .card .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20vh;
+    height: 18vh;
+  }
+  .container .card .left .left_textInput {
+    width: 20vh;
+    height: 18vh;
+  }
+  .container .card .container-muñeco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+  .container .card .container-muñeco_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 30vh;
+  }
+  .container .card .container-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    margin: 0px;
+  }
+  .container .card .container-btn .btn-encriptar {
+    width: 120px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-size: .7rem;
+    font-weight: 800;
+  }
+  .container .card .container-btn .btn-encriptar:hover {
+    background-color: rgba(212, 166, 97, 0.623);
+  }
+  .container .card .rightContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .card .rightContainer h1 {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+  .container .card .rightContainer textarea {
+    width: 200px;
+    height: 150px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .container .card .rightContainer button {
+    margin-top: 10px;
+    border: 2px solid black;
+  }
+  .container .card p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+  }
 }
 
 * {
